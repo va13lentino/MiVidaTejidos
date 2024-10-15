@@ -39,16 +39,19 @@ nav ul li a {
 
 
 /*!-------MAIN-------*/
-
+.logo img{
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .logo{
-    font-size: 20px;
-    margin-left: 10px;
-    height: 90vh;
-    background-image: url("C:\Users\Martina\Desktop\proyecto-coder\img\logo.jpg" );
-    background-position: center;
-    background-position: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+}
+.div{
+    overflow-x: hidden;
 }
 
 .info{
@@ -150,6 +153,17 @@ nav ul li a {
 
 /*!-------FOOTER-------*/
 
+@media screen and (max-width:720px){
+    .logo img{
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .logo img{
+        max-width: 200px;
+    }
+}
 
 @media screen and (max-width: 700px){
     header{
@@ -177,4 +191,27 @@ nav ul li a {
     .item{
         grid-column: span 1 ;
     }
+}
+
+/* NOSOTROS */
+/* PRINCIPIO */
+.principio{
+    display: flex;
+    background-color: rgb(224, 172, 253);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid rgb(223, 167, 255);
+}
+/* OBJETIVOS */
+.objetivos{
+    display: flex;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid coral;
+}
+.objetivos p{
+    border: 0;
 }
