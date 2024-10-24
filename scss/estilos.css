@@ -1,0 +1,35 @@
+.productos h3 {
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.301);
+  color: rgba(230, 66, 245, 0.959);
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.productos .productos-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productos .productos .productos-contenedor div {
+  border: 1px solid burlywood;
+  width: 250px;
+  height: 448px;
+  text-align: center;
+  margin: 45px;
+  box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
+}
+.productos img {
+  width: 250px;
+}
+.productos h4 {
+  font-size: 30px;
+  margin: 15px;
+}
+.productos a {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=estilos.css.map */

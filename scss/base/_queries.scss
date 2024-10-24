@@ -1,0 +1,85 @@
+//---INDEX----//
+
+@media screen and (max-width:720px) {
+    .logo img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .logo img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .info-todo {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .info {
+        font-size: 1.3rem;
+    }
+
+    .info-contenido {
+        font-size: 1rem;
+    }
+}
+
+
+// ----PRODUCTOS----//
+
+@media screen and (max-width: 750px) {
+    .trabajos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .trabajos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+// ----CONTACTOS----//
+@media screen and (max-width: 720px) {
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-group {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .form-group:nth-child(2n) {
+        margin-right: 0;
+
+    }
+
+    textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .conteiner-datos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .datos {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+// Funcionalidades */ 
+
+// VARIABLES */
+$color-principal: rgb(223, 255, 255); 
+
+// LISTAS//
+
+$colores:   rgb(224,172,253), rgb(250,185,161), rgb(250,185,161), rgb(224,172,253), rgb(252,249,105), rgb(223,255,255), rgb(255, 245, 238), rgb(255,245,238);
+
+$font-size: 25px, 55px, 40px, 30px, 35px, 38px, 20px, 24px, 16px, 14px, ;
+
+
+header{
+    font-size: nth($font-size, 1 );
+}
+
+// OPERACIONES /
+$ancho:740px; 
+
+// --MAPAS --/
+
+$boton:(
+    btn-fondo:black,
+    btn-borde:2px solid white,
+    btn-text:white,
+);
+
+// --EXTENDS--/
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objetivos{
+    @extend %flex-center;
+}
+
+// --MIXIN --/
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
