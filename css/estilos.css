@@ -11,44 +11,60 @@ header {
   padding: 30px;
   font-size: 25px; }
 
-main div .logo {
+header {
+  background-color: #dfffff;
+  padding: 30px;
+  font-size: 25px; }
+  header h1 {
+    color: black;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: none; }
+
+.titulo {
+  font-size: 30px; }
+
+.logo {
   overflow: hidden;
   max-width: 100%;
   text-align: center; }
-  main div .logo img {
+  .logo img {
     max-width: 850px;
     height: auto;
     display: block;
     margin: 0 auto; }
 
-main .info {
-  font-size: 55px;
-  text-align: center;
-  color: black; }
+.div {
+  overflow-x: hidden; }
 
-main .hero h2 {
-  color: rgba(230, 66, 245, 0.959);
-  font-size: 40px;
-  text-align: center;
-  margin: 5px;
-  padding: 5px; }
-
-main .info-todo div {
+.info-todo {
   border: rgba(230, 66, 245, 0.808) solid 2px;
   margin: 15px; }
-  main .info-todo div .info p {
+  .info-todo .info {
     font-size: 55px;
     text-align: center;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(230, 66, 245, 0.548); }
-    main .info-todo div .info p .info-contenido p {
-      font-family: 'Times New Roman', Times, serif;
-      color: black;
-      font-size: 30px;
-      margin: 5px; }
+    background-color: rgba(230, 66, 245, 0.547); }
+  .info-todo .info-contenido {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 30px;
+    margin: 5px; }
 
-main .productos .productos h3 {
+.hero h2 {
+  font-size: 55px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  line-height: 100px;
+  color: #fbff2a;
+  border: rgba(230, 66, 245, 0.808) solid 2px;
+  background-color: rgba(230, 66, 245, 0.549);
+  text-align: center;
+  padding: 5px;
+  margin: 10px; }
+
+.productos h3 {
   text-align: center;
   background-color: rgba(8, 8, 8, 0.301);
   color: rgba(230, 66, 245, 0.959);
@@ -56,63 +72,115 @@ main .productos .productos h3 {
   text-transform: uppercase;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif; }
-  main .productos .productos h3 .productos .productos-contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    main .productos .productos h3 .productos .productos-contenedor .productos .productos-contenedor div {
-      border: 1px solid burlywood;
-      width: 250px;
-      height: 448px;
-      text-align: center;
-      margin: 45px;
-      box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75); }
-      main .productos .productos h3 .productos .productos-contenedor .productos .productos-contenedor div .productos div img {
-        width: 250px; }
-        main .productos .productos h3 .productos .productos-contenedor .productos .productos-contenedor div .productos div img .productos div h4 {
-          font-size: 30px;
-          margin: 15px; }
-          main .productos .productos h3 .productos .productos-contenedor .productos .productos-contenedor div .productos div img .productos div h4 .productos div a {
-            background-color: black;
-            color: white; }
 
-.identidad .principio {
+.productos .productos-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .productos .productos-contenedor div {
+    border: 1px solid burlywood;
+    width: 250px;
+    height: 448px;
+    text-align: center;
+    margin: 45px;
+    box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75); }
+    .productos .productos-contenedor div img {
+      width: 250px; }
+    .productos .productos-contenedor div h4 {
+      font-size: 30px;
+      margin: 15px;
+      font-family: 'Times New Roman', Times, serif; }
+    .productos .productos-contenedor div a {
+      background-color: black;
+      color: white; }
+
+footer .custom-footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center; }
+  footer .custom-footer img {
+    max-width: 150px;
+    margin-bottom: 1.5rem; }
+  footer .custom-footer a {
+    max-width: 40px;
+    margin-right: 1.5rem; }
+
+@media screen and (max-width: 720px) {
+  .logo img {
+    max-width: 500px; } }
+
+@media screen and (max-width: 500px) {
+  .logo img {
+    max-width: 200px; } }
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 620px) {
+  .info-todo {
+    padding: 15px;
+    max-width: 90%; }
+  .info {
+    font-size: 1.3rem; }
+  .info-contenido {
+    font-size: 1rem; } }
+
+.fondo1 {
+  background-color: #dfffff;
+  padding: 30px; }
+
+.nav-item {
+  font-size: 25px; }
+
+.principio {
   display: flex;
   background-color: #e0acfd;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  border: 2px solid #dfa7ff;
   border: 2px solid #c35cff; }
-  .identidad .principio .principio div h1 {
+  .principio div h1 {
     font-size: 38px;
     background-color: rgba(0, 0, 0, 0.068);
     font-family: georgia;
     padding: 5px; }
-    .identidad .principio .principio div h1 .princioio div p {
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 2px; }
+  .principio div p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px; }
 
-.identidad .objetivos {
+.objetivos {
   display: flex;
   background-color: #fab9a1;
   justify-content: center;
   align-items: center;
   padding: 30px;
   border: 2px solid coral; }
-  .identidad .objetivos .objetivos div h1 {
+  .objetivos div h1 {
     font-size: 38px;
     background-color: rgba(0, 0, 0, 0.068);
     font-family: georgia;
     padding: 5px; }
-    .identidad .objetivos .objetivos div h1 .objetivos div p {
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 2px; }
+  .objetivos div p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px; }
+
+.custom-footer {
+  background-color: #dfffff;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif; }
+
+.fondo2 {
+  background-color: #dfffff;
+  padding: 30px; }
+  .fondo2 .navbar .navbar-brand {
+    font-size: 2rem;
+    color: red; }
+  .fondo2 .navbar .nav-item {
+    font-size: 25px; }
 
 .titulo1 h1 {
   text-align: center;
@@ -123,163 +191,270 @@ main .productos .productos h3 {
   padding: 20px;
   margin: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif; }
-  .titulo1 h1 .trabajos {
-    width: 100%;
-    margin-top: 50px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 250px;
-    gap: 15px; }
-    .titulo1 h1 .trabajos .item {
-      position: relative; }
-      .titulo1 h1 .trabajos .item .trabajos div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75); }
-        .titulo1 h1 .trabajos .item .trabajos div img .item h2 {
-          position: absolute;
-          bottom: 0;
-          color: white;
-          background-color: rgba(0, 0, 0, 0.356);
-          width: 100%;
-          padding: 3px;
-          font-family: 'Times New Roman', Times, serif; }
 
-.img-9 {
-  grid-column: span 2; }
+.trabajos {
+  width: 100%;
+  margin-top: 50px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .trabajos .item {
+    position: relative; }
+    .trabajos .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 10px 19px -4px rgba(0, 0, 0, 0.75); }
+    .trabajos .item h2 {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.356);
+      width: 100%;
+      padding: 3px;
+      font-family: 'Times New Roman', Times, serif; }
+    .trabajos .item.img-9 {
+      grid-column: span 2; }
+    .trabajos .item.img-6 {
+      grid-row: span 2; }
+    .trabajos .item.img-7 {
+      grid-row: span 2; }
 
-.img-6 {
-  grid-row: span 2; }
+@media screen and (max-width: 750px) {
+  .trabajos {
+    grid-template-columns: repeat(2, 1fr); } }
 
-.img-7 {
-  grid-row: span 2; }
+@media screen and (max-width: 420px) {
+  .trabajos {
+    grid-template-columns: 1fr; } }
 
-.identificacion .pedidos-1 {
+.custom-footer {
+  background-color: #dfffff;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif; }
+  .custom-footer .container {
+    text-align: center; }
+    .custom-footer .container img {
+      max-width: 150px;
+      margin-bottom: 1rem; }
+    .custom-footer .container h4 {
+      margin-bottom: 1rem; }
+    .custom-footer .container a img {
+      max-width: 40px;
+      margin-right: 1rem; }
+
+.fondo3 {
+  background-color: #dfffff;
+  padding: 30px; }
+
+.navbar .navbar-brand {
+  font-size: 2rem;
+  color: red; }
+
+.navbar .nav-item {
+  font-size: 25px; }
+
+.pedidos-1 {
   display: flex;
   background-color: #fab9a1;
   justify-content: center;
   align-items: center;
   padding: 30px;
   border: 2px solid coral; }
-  .identificacion .pedidos-1 .pedidos-1 div h1 {
+  .pedidos-1 div h1 {
     font-size: 38px;
     background-color: rgba(0, 0, 0, 0.068);
     font-family: georgia;
     padding: 5px; }
-    .identificacion .pedidos-1 .pedidos-1 div h1 .pedidos div p {
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 2px; }
+  .pedidos-1 div p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px; }
 
-.identificacion .materiales {
+.materiales {
   display: flex;
   align-items: center;
   background-color: #e0acfd;
   padding: 30px;
-  border: 2px solid #dfa7ff;
   border: 2px solid #c35cff; }
-  .identificacion .materiales .materiale div h1 {
+  .materiales img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; }
+  .materiales div h1 {
     font-size: 38px;
     background-color: rgba(0, 0, 0, 0.068);
     font-family: georgia;
     padding: 5px; }
-    .identificacion .materiales .materiale div h1 .materiales div p {
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 2px; }
-      .identificacion .materiales .materiale div h1 .materiales div p .materiales img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-left: 20px; }
+  .materiales div p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px; }
 
-.identificacion .testimonios {
+.testimonios {
   display: flex;
   background-color: #fcf969;
   justify-content: space-around;
   align-items: center;
   padding: 30px;
   border: 2px solid yellow; }
-  .identificacion .testimonios .testimonios div h1 {
+  .testimonios div h1 {
     font-size: 38px;
     background-color: rgba(0, 0, 0, 0.068);
     font-family: georgia;
     padding: 5px; }
-    .identificacion .testimonios .testimonios div h1 .testimonios div p {
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-      padding: 2px; }
-
-.datosdecontacto .contact-form {
-  background-color: #fff5ee;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 5px; }
-  .datosdecontacto .contact-form .contac-form h2 {
-    text-align: center;
-    color: rgba(214, 47, 186, 0.906);
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif; }
-    .datosdecontacto .contact-form .contac-form h2 .form-row {
-      display: flex;
-      justify-content: space-between; }
-      .datosdecontacto .contact-form .contac-form h2 .form-row .form-group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px; }
-        .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group {
-          flex: 1;
-          margin-right: 10px; }
-          .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child {
-            margin-right: 0; }
-            .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label {
-              font-size: 16px;
-              color: #333;
-              margin-bottom: 5px;
-              font-family: 'Times New Roman', Times, serif; }
-              .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea {
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 14px;
-                width: 90%; }
-                .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea {
-                  resize: none;
-                  height: 100px; }
-                  .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn {
-                    background-color: #ff38f58f;
-                    color: white;
-                    border: none;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    font-size: 16px;
-                    width: 100%; }
-                    .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn .submit-btn:hover {
-                      background-color: #c726b9d7; }
-                      .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn .submit-btn:hover .contact-form {
-                        max-width: 100%;
-                        margin: 0 auto; }
-                        .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn .submit-btn:hover .contact-form .form-row {
-                          display: flex;
-                          flex-direction: column; }
-                          .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn .submit-btn:hover .contact-form .form-row .form-group {
-                            margin-bottom: 15px; }
-                            .datosdecontacto .contact-form .contac-form h2 .form-row .form-group .form-row .form-group .form-row .form-group:last-child .form-group label .form-group input .form-grop textarea .form-group textarea .submit-btn .submit-btn:hover .contact-form .form-row .form-group textarea {
-                              width: 100%;
-                              height: 100px; }
+  .testimonios div p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px; }
 
 .custom-footer {
   background-color: #dfffff;
   color: #333;
   font-family: 'Times New Roman', Times, serif; }
+  .custom-footer .container {
+    text-align: center; }
+    .custom-footer .container img {
+      max-width: 150px;
+      margin-bottom: 1rem; }
+    .custom-footer .container h4 {
+      font-size: 1.25rem; }
+    .custom-footer .container a {
+      margin-right: 1rem; }
+      .custom-footer .container a img {
+        max-width: 40px; }
+
+.fondo {
+  background-color: #dfffff;
+  padding: 30px; }
+  .fondo .nav-item {
+    font-size: 25px; }
+
+.todo {
+  font-family: Arial, sans-serif;
+  background-color: #f2e1d5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.contact-form {
+  background-color: seashell;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  max-width: 100%;
+  margin: 0 auto; }
+  .contact-form h2 {
+    text-align: center;
+    color: rgba(214, 47, 186, 0.906);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .contact-form .form-row {
+    display: flex;
+    flex-direction: column; }
+    .contact-form .form-row .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+      .contact-form .form-row .form-group label {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+        font-family: 'Times New Roman', Times, serif; }
+      .contact-form .form-row .form-group input,
+      .contact-form .form-row .form-group textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 90%; }
+      .contact-form .form-row .form-group textarea {
+        resize: none;
+        height: 100px; }
+  .contact-form .submit-btn {
+    background-color: #ff38f58f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; }
+    .contact-form .submit-btn:hover {
+      background-color: #c726b9d7; }
+
+.section {
+  color: #fff5ee; }
+
+.conteiner-datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: seashell; }
+  .conteiner-datos .datos {
+    flex: 1;
+    margin-right: 20px; }
+    .conteiner-datos .datos .datos-info {
+      display: flex;
+      flex-direction: column;
+      margin: 30px; }
+      .conteiner-datos .datos .datos-info h3 {
+        font-size: 1.5em;
+        font-weight: 800;
+        line-height: 1em;
+        font-family: 'Times New Roman', Times, serif; }
+      .conteiner-datos .datos .datos-info p {
+        line-height: 1.4em;
+        font-size: 2em;
+        font-weight: 300; }
+  .conteiner-datos .iframe {
+    flex: 1; }
+
+@media screen and (max-width: 720px) {
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .form-row .form-group {
+      flex: 1;
+      margin-right: 10px; }
+      .form-row .form-group:nth-child(2n) {
+        margin-right: 0; }
+    .form-row textarea {
+      height: 150px; } }
+
+@media screen and (max-width: 620px) {
+  .conteiner-datos {
+    flex-direction: column;
+    align-items: flex-start; }
+    .conteiner-datos .datos {
+      margin-right: 0;
+      margin-bottom: 20px; } }
+
+.custom-footer {
+  background-color: #dfffff;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif; }
+  .custom-footer .container {
+    text-align: center; }
+    .custom-footer .container img {
+      max-width: 150px;
+      margin-bottom: 1rem; }
+    .custom-footer .container h4 {
+      font-size: 1.25rem; }
+    .custom-footer .container a {
+      margin-right: 1rem; }
+      .custom-footer .container a img {
+        max-width: 40px; }
 
 @media screen and (max-width: 720px) {
   .logo img {
